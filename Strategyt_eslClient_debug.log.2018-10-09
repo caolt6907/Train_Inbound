@@ -1,0 +1,1362 @@
+[INFO ]2018-10-09 08:48:13,085-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:59092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+  
+[INFO ]2018-10-09 08:48:13,451-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 08:48:13,454-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 08:48:13,484-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:59092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+  
+[INFO ]2018-10-09 08:48:13,593-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 08:48:13,593-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 08:48:14,282-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Discovered coordinator kafka-Ubuntu-Z01:59092 (id: 2147483647 rack: null) for group test.  
+[INFO ]2018-10-09 08:48:14,300-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Revoking previously assigned partitions [] for group test  
+[INFO ]2018-10-09 08:48:14,301-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): (Re-)joining group test  
+[INFO ]2018-10-09 08:48:14,338-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): SocketClient waiting for connections on [/127.0.0.1:8022] ...  
+[INFO ]2018-10-09 08:48:14,341-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Successfully joined group test with generation 32  
+[INFO ]2018-10-09 08:48:14,342-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Setting newly assigned partitions [test-0] for group test  
+[INFO ]2018-10-09 08:48:14,402-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connecting to /127.0.0.1:8021 ...  
+[INFO ]2018-10-09 08:48:14,486-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connected to /127.0.0.1:8021  
+[INFO ]2018-10-09 08:48:14,523-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=auth/request, headers=1, body=0 lines}]  
+[INFO ]2018-10-09 08:48:14,539-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 08:48:14,738-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Authenticated  
+[INFO ]2018-10-09 08:48:14,772-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 08:48:14,773-->com.strategy.call.TaskTzManager.main(TaskTzManager.java:107): dialer.init ok  
+[INFO ]2018-10-09 08:48:51,967-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 08:48:52,113-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 08:48:52,157-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=180 lines}]  
+[INFO ]2018-10-09 08:49:02,072-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:2b53dc78-d43d-43c6-bcec-b83db1ccd102  
+[INFO ]2018-10-09 08:49:02,080-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:2b53dc78-d43d-43c6-bcec-b83db1ccd102**********  
+[INFO ]2018-10-09 08:49:02,085-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 08:49:02,086-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 08:49:02,232-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 48=18964747092  
+[INFO ]2018-10-09 08:49:07,228-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 08:49:07,229-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 08:49:07,230-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 08:49:14,968-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 08:49:14,970-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 08:49:14,971-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 08:49:21,148-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 08:49:21,150-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 08:49:21,150-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 08:49:24,188-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 08:49:24,191-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 08:49:24,192-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[WARN ]2018-10-09 08:49:24,194-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:433): An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.  
+org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 08:49:24,192-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[ERROR]2018-10-09 08:49:24,229-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 5 more
+[INFO ]2018-10-09 09:00:17,071-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread1  
+[INFO ]2018-10-09 09:01:26,318-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:59092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+  
+[INFO ]2018-10-09 09:01:26,748-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 09:01:26,752-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 09:01:26,814-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:59092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+  
+[INFO ]2018-10-09 09:01:26,977-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 09:01:26,977-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 09:01:28,058-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Discovered coordinator kafka-Ubuntu-Z01:59092 (id: 2147483647 rack: null) for group test.  
+[INFO ]2018-10-09 09:01:28,068-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Revoking previously assigned partitions [] for group test  
+[INFO ]2018-10-09 09:01:28,068-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): (Re-)joining group test  
+[INFO ]2018-10-09 09:01:28,108-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Successfully joined group test with generation 34  
+[INFO ]2018-10-09 09:01:28,110-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Setting newly assigned partitions [test-0] for group test  
+[INFO ]2018-10-09 09:01:28,136-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): SocketClient waiting for connections on [/127.0.0.1:8022] ...  
+[INFO ]2018-10-09 09:01:28,241-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connecting to /127.0.0.1:8021 ...  
+[INFO ]2018-10-09 09:01:28,381-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connected to /127.0.0.1:8021  
+[INFO ]2018-10-09 09:01:28,470-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=auth/request, headers=1, body=0 lines}]  
+[INFO ]2018-10-09 09:01:28,488-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 09:01:28,632-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Authenticated  
+[INFO ]2018-10-09 09:01:28,647-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 09:01:28,656-->com.strategy.call.TaskTzManager.main(TaskTzManager.java:107): dialer.init ok  
+[INFO ]2018-10-09 09:01:35,900-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 09:01:36,130-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 09:01:36,170-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 09:01:48,912-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:37cd881b-d9a5-4670-99a2-04a6aecbccba  
+[INFO ]2018-10-09 09:01:48,916-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:37cd881b-d9a5-4670-99a2-04a6aecbccba**********  
+[INFO ]2018-10-09 09:01:48,929-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 09:01:48,929-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 09:01:49,030-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 49=18964747092  
+[INFO ]2018-10-09 09:01:50,908-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 09:01:50,909-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 09:01:50,910-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 09:02:07,567-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 09:02:07,569-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 09:02:07,570-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"text",speech:"你好语音识别"}  
+[INFO ]2018-10-09 09:02:16,347-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 09:02:16,349-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 09:02:16,349-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"text",speech:"上海电信科技发展有限公司"}  
+[INFO ]2018-10-09 09:02:19,388-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 09:02:19,391-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 09:02:19,391-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[INFO ]2018-10-09 09:02:19,392-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[INFO ]2018-10-09 09:02:19,393-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:338): Disconnect notice:   
+java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1975)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.exceptionCaught(AbstractEslClientHandler.java:77)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ]2018-10-09 09:02:19,399-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:399): An exception 'java.lang.NullPointerException' [enable DEBUG level for full stacktrace] was thrown by a user handler's exceptionCaught() method while handling the following exception:  
+java.lang.IllegalStateException: Unexpected EVENT content-type: text/disconnect-notice
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:76)
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:61)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:149)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR]2018-10-09 09:02:19,399-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+java.lang.NullPointerException
+	at org.freeswitch.esl.client.transport.CommandResponse.<init>(CommandResponse.java:34)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:247)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 16:06:46,179-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:59092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+  
+[INFO ]2018-10-09 16:06:46,510-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 16:06:46,514-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 16:06:46,547-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:59092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+  
+[INFO ]2018-10-09 16:06:46,668-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 16:06:46,668-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 16:06:47,509-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Discovered coordinator kafka-Ubuntu-Z01:59092 (id: 2147483647 rack: null) for group test.  
+[INFO ]2018-10-09 16:06:47,524-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Revoking previously assigned partitions [] for group test  
+[INFO ]2018-10-09 16:06:47,525-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): (Re-)joining group test  
+[INFO ]2018-10-09 16:06:47,581-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Successfully joined group test with generation 36  
+[INFO ]2018-10-09 16:06:47,583-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Setting newly assigned partitions [test-0] for group test  
+[INFO ]2018-10-09 16:06:47,604-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): SocketClient waiting for connections on [/127.0.0.1:8022] ...  
+[INFO ]2018-10-09 16:06:47,658-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connecting to /127.0.0.1:8021 ...  
+[INFO ]2018-10-09 16:06:47,745-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connected to /127.0.0.1:8021  
+[INFO ]2018-10-09 16:06:47,793-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=auth/request, headers=1, body=0 lines}]  
+[INFO ]2018-10-09 16:06:47,806-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:06:47,997-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Authenticated  
+[INFO ]2018-10-09 16:06:48,021-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:06:48,029-->com.strategy.call.TaskTzManager.main(TaskTzManager.java:107): dialer.init ok  
+[INFO ]2018-10-09 16:07:19,327-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:07:19,673-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:07:19,722-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[INFO ]2018-10-09 16:07:19,724-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:338): Disconnect notice:   
+java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1975)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.exceptionCaught(AbstractEslClientHandler.java:77)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ]2018-10-09 16:07:19,739-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:399): An exception 'java.lang.NullPointerException' [enable DEBUG level for full stacktrace] was thrown by a user handler's exceptionCaught() method while handling the following exception:  
+java.lang.IllegalStateException: Unexpected EVENT content-type: text/disconnect-notice
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:76)
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:61)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:149)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 16:07:19,820-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_HANGUP:ffb6481d-c1b1-4b4c-a8da-1ec09a523e49  
+[INFO ]2018-10-09 16:07:19,837-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########USER_BUSY**********  
+[WARN ]2018-10-09 16:07:20,001-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 50=18964747092  
+[INFO ]2018-10-09 16:07:30,929-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:07:31,157-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:07:31,172-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:07:55,612-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:b36c7a7d-4bdd-49c8-a57e-055c45194ab6  
+[INFO ]2018-10-09 16:07:55,615-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:b36c7a7d-4bdd-49c8-a57e-055c45194ab6**********  
+[INFO ]2018-10-09 16:07:55,616-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:07:55,617-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 16:07:55,642-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 51=18964747092  
+[INFO ]2018-10-09 16:07:57,483-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:07:57,490-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:07:57,491-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:08:03,538-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:08:03,540-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:08:03,540-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:08:09,598-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:08:09,600-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:08:09,600-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:08:12,639-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:08:12,656-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:08:12,657-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[WARN ]2018-10-09 16:08:12,657-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:433): An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.  
+org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 16:08:12,658-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[ERROR]2018-10-09 16:08:12,665-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 5 more
+[INFO ]2018-10-09 16:09:31,368-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread1  
+[INFO ]2018-10-09 16:09:31,634-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:09:31,646-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:09:42,654-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:d6638585-1fdb-48b0-9b6e-3618adeddd54  
+[INFO ]2018-10-09 16:09:42,656-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:09:42,657-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[INFO ]2018-10-09 16:09:42,658-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:d6638585-1fdb-48b0-9b6e-3618adeddd54**********  
+[WARN ]2018-10-09 16:09:42,669-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 52=18964747092  
+[INFO ]2018-10-09 16:09:47,187-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:09:47,192-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:09:47,192-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:09:47,195-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:09:47,199-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:09:47,200-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"text",speech:""}  
+[INFO ]2018-10-09 16:10:55,648-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:10:55,837-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:10:55,877-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:11:04,412-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:cbf13e2a-4f5e-4c85-b96e-bc49930c218d  
+[INFO ]2018-10-09 16:11:04,413-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:cbf13e2a-4f5e-4c85-b96e-bc49930c218d**********  
+[INFO ]2018-10-09 16:11:04,414-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:11:04,414-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 16:11:04,420-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 53=18964747092  
+[INFO ]2018-10-09 16:11:06,555-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:11:06,561-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:11:06,561-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:11:14,795-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:11:14,797-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:11:14,798-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"text",speech:"对科技发展有限公司"}  
+[INFO ]2018-10-09 16:11:20,214-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:11:20,216-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:11:20,216-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:11:23,255-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:11:23,257-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:11:23,258-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[WARN ]2018-10-09 16:11:23,258-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:433): An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.  
+org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 16:11:23,259-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[ERROR]2018-10-09 16:11:23,261-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 5 more
+[INFO ]2018-10-09 16:11:54,447-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:11:54,447-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[INFO ]2018-10-09 16:11:54,448-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:338): Disconnect notice:   
+java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1975)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.exceptionCaught(AbstractEslClientHandler.java:77)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ]2018-10-09 16:11:54,448-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:null  
+[WARN ]2018-10-09 16:11:54,449-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:399): An exception 'java.lang.NullPointerException' [enable DEBUG level for full stacktrace] was thrown by a user handler's exceptionCaught() method while handling the following exception:  
+java.lang.IllegalStateException: Unexpected EVENT content-type: text/disconnect-notice
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:76)
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:61)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:149)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR]2018-10-09 16:11:54,449-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:64): onConnected  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.playback(Execute.java:966)
+	at org.freeswitch.esl.client.dptools.Execute.playback(Execute.java:944)
+	at com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:60)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:69)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 7 more
+[INFO ]2018-10-09 16:11:54,450-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:72): onConnected could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:68)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:69)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 6 more
+[ERROR]2018-10-09 16:11:54,450-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 5 more
+[INFO ]2018-10-09 16:16:21,304-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:59092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+  
+[INFO ]2018-10-09 16:16:21,624-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 16:16:21,630-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 16:16:21,662-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:59092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+  
+[INFO ]2018-10-09 16:16:21,780-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 16:16:21,780-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 16:16:22,646-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Discovered coordinator kafka-Ubuntu-Z01:59092 (id: 2147483647 rack: null) for group test.  
+[INFO ]2018-10-09 16:16:22,663-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Revoking previously assigned partitions [] for group test  
+[INFO ]2018-10-09 16:16:22,663-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): (Re-)joining group test  
+[INFO ]2018-10-09 16:16:22,695-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Successfully joined group test with generation 38  
+[INFO ]2018-10-09 16:16:22,697-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Setting newly assigned partitions [test-0] for group test  
+[INFO ]2018-10-09 16:16:22,714-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): SocketClient waiting for connections on [/127.0.0.1:8022] ...  
+[INFO ]2018-10-09 16:16:22,778-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connecting to /127.0.0.1:8021 ...  
+[INFO ]2018-10-09 16:16:22,856-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connected to /127.0.0.1:8021  
+[INFO ]2018-10-09 16:16:22,911-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=auth/request, headers=1, body=0 lines}]  
+[INFO ]2018-10-09 16:16:22,929-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:16:23,108-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Authenticated  
+[INFO ]2018-10-09 16:16:23,135-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:16:23,137-->com.strategy.call.TaskTzManager.main(TaskTzManager.java:107): dialer.init ok  
+[INFO ]2018-10-09 16:16:30,332-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:16:30,722-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:16:30,849-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:16:40,978-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:277322e4-b9e2-49b8-9b04-c2a5f7a3d26a  
+[INFO ]2018-10-09 16:16:40,981-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:277322e4-b9e2-49b8-9b04-c2a5f7a3d26a**********  
+[INFO ]2018-10-09 16:16:40,984-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:16:40,984-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 16:16:41,092-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 54=18964747092  
+[INFO ]2018-10-09 16:16:45,983-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:16:45,984-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:16:45,985-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:16:49,023-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:16:49,027-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:16:49,027-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[INFO ]2018-10-09 16:16:49,028-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[WARN ]2018-10-09 16:16:49,030-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:433): An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.  
+org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR]2018-10-09 16:16:49,035-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 5 more
+[INFO ]2018-10-09 16:17:12,046-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:17:12,232-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:17:12,297-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:17:28,378-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:b73a1853-ed7b-411d-beac-5f5bd492caac  
+[INFO ]2018-10-09 16:17:28,381-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:b73a1853-ed7b-411d-beac-5f5bd492caac**********  
+[INFO ]2018-10-09 16:17:28,382-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:17:28,382-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 16:17:28,387-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 55=18964747092  
+[INFO ]2018-10-09 16:17:30,459-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:17:30,463-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:17:30,463-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:17:33,499-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:17:33,502-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:17:33,503-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[WARN ]2018-10-09 16:17:33,503-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:433): An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.  
+org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 16:17:33,504-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[ERROR]2018-10-09 16:17:33,504-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+com.google.common.util.concurrent.UncheckedExecutionException: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at com.google.common.util.concurrent.Futures.wrapAndThrowUnchecked(Futures.java:1575)
+	at com.google.common.util.concurrent.Futures.getUnchecked(Futures.java:1560)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:246)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.freeswitch.esl.client.dptools.ExecuteException: text/disconnect-notice
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.sendApiMultiLineCommand(AbstractEslClientHandler.java:231)
+	... 5 more
+[INFO ]2018-10-09 16:21:44,649-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ProducerConfig values: 
+	acks = all
+	batch.size = 16384
+	bootstrap.servers = [127.0.0.1:59092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 1
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+  
+[INFO ]2018-10-09 16:21:44,964-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 16:21:44,979-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 16:21:45,011-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): ConsumerConfig values: 
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:59092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = test
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 30000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+  
+[INFO ]2018-10-09 16:21:45,131-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka version : 0.11.0.1  
+[INFO ]2018-10-09 16:21:45,131-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Kafka commitId : c2a0d5f9b1f45bf5  
+[INFO ]2018-10-09 16:21:45,953-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Discovered coordinator kafka-Ubuntu-Z01:59092 (id: 2147483647 rack: null) for group test.  
+[INFO ]2018-10-09 16:21:45,968-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Revoking previously assigned partitions [] for group test  
+[INFO ]2018-10-09 16:21:45,969-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): (Re-)joining group test  
+[INFO ]2018-10-09 16:21:46,018-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): SocketClient waiting for connections on [/127.0.0.1:8022] ...  
+[INFO ]2018-10-09 16:21:46,068-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connecting to /127.0.0.1:8021 ...  
+[INFO ]2018-10-09 16:21:46,142-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Connected to /127.0.0.1:8021  
+[INFO ]2018-10-09 16:21:46,185-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=auth/request, headers=1, body=0 lines}]  
+[INFO ]2018-10-09 16:21:46,199-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:21:46,393-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): Authenticated  
+[INFO ]2018-10-09 16:21:46,429-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:21:46,439-->com.strategy.call.TaskTzManager.main(TaskTzManager.java:107): dialer.init ok  
+[INFO ]2018-10-09 16:21:53,715-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:21:53,911-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:21:53,953-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:22:10,787-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Successfully joined group test with generation 39  
+[INFO ]2018-10-09 16:22:10,788-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:305): Setting newly assigned partitions [test-0] for group test  
+[INFO ]2018-10-09 16:22:18,292-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:d6e8e126-dca8-4542-9b83-93f60178f830  
+[INFO ]2018-10-09 16:22:18,295-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:d6e8e126-dca8-4542-9b83-93f60178f830**********  
+[INFO ]2018-10-09 16:22:18,297-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:22:18,297-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 16:22:18,429-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 56=18964747092  
+[INFO ]2018-10-09 16:22:23,195-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:22:23,197-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:22:23,198-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:22:29,295-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:22:29,297-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:22:29,297-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:22:32,337-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:22:32,339-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:22:32,339-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[INFO ]2018-10-09 16:22:32,340-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[INFO ]2018-10-09 16:22:32,341-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:338): Disconnect notice:   
+java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1975)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.exceptionCaught(AbstractEslClientHandler.java:77)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR]2018-10-09 16:22:32,347-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+java.lang.NullPointerException
+	at org.freeswitch.esl.client.transport.CommandResponse.<init>(CommandResponse.java:34)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:247)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ]2018-10-09 16:22:32,352-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:399): An exception 'java.lang.NullPointerException' [enable DEBUG level for full stacktrace] was thrown by a user handler's exceptionCaught() method while handling the following exception:  
+java.lang.IllegalStateException: Unexpected EVENT content-type: text/disconnect-notice
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:76)
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:61)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:149)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ]2018-10-09 16:22:41,382-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:46): 18964747092bd5ba87f-d429-4638-9656-96727fda0ee7_thread0  
+[INFO ]2018-10-09 16:22:41,548-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[INFO ]2018-10-09 16:22:41,600-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=5, body=181 lines}]  
+[INFO ]2018-10-09 16:22:58,938-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:260): CHANNEL_ANSWER:d96344cb-9038-4ef8-8988-5e89975cef14  
+[INFO ]2018-10-09 16:22:58,938-->com.strategy.call.CallTableTask_Robot.run(CallTableTask_Robot.java:50): ###########UUID:d96344cb-9038-4ef8-8988-5e89975cef14**********  
+[INFO ]2018-10-09 16:22:58,940-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[WARN ]2018-10-09 16:22:58,942-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:48): $$$$$$$bd5ba87f-d429-4638-9656-96727fda0ee7|18964747092&&&&&&&  
+[WARN ]2018-10-09 16:22:58,948-->com.strategy.call.CallConsumerTask_Kafka.run(CallConsumerTask_Kafka.java:27): 57=18964747092  
+[INFO ]2018-10-09 16:23:00,415-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:23:00,416-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:23:00,417-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"nomatch",speech:""}  
+[INFO ]2018-10-09 16:23:09,095-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:23:09,097-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=api/response, headers=2, body=1 lines}]  
+[WARN ]2018-10-09 16:23:09,097-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:52): Speech:{result:"text",speech:"你好测试语音识别就"}  
+[INFO ]2018-10-09 16:23:12,135-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:23:12,138-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=command/reply, headers=2, body=0 lines}]  
+[INFO ]2018-10-09 16:23:12,143-->com.strategy.call.TaskTzManager$clientMessage.onConnected(TaskTzManager.java:69): onConnected hangup  
+[INFO ]2018-10-09 16:23:12,143-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:281): Received message: [EslMessage{contentType=text/disconnect-notice, headers=3, body=4 lines}]  
+[INFO ]2018-10-09 16:23:12,143-->org.slf4j.impl.JCLLoggerAdapter.info(JCLLoggerAdapter.java:338): Disconnect notice:   
+java.lang.NullPointerException
+	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:1975)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.exceptionCaught(AbstractEslClientHandler.java:77)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:141)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
+[ERROR]2018-10-09 16:23:12,144-->org.slf4j.impl.JCLLoggerAdapter.error(JCLLoggerAdapter.java:528): onConnected: could not hangup  
+java.lang.NullPointerException
+	at org.freeswitch.esl.client.transport.CommandResponse.<init>(CommandResponse.java:34)
+	at org.freeswitch.esl.client.internal.Context.sendMessage(Context.java:247)
+	at org.freeswitch.esl.client.dptools.Execute.sendExeMesg(Execute.java:1699)
+	at org.freeswitch.esl.client.dptools.Execute.hangup(Execute.java:722)
+	at org.freeswitch.esl.client.dialerClient.run(dialerClient.java:73)
+	at java.lang.Thread.run(Thread.java:748)
+[WARN ]2018-10-09 16:23:12,144-->org.slf4j.impl.JCLLoggerAdapter.warn(JCLLoggerAdapter.java:399): An exception 'java.lang.NullPointerException' [enable DEBUG level for full stacktrace] was thrown by a user handler's exceptionCaught() method while handling the following exception:  
+java.lang.IllegalStateException: Unexpected EVENT content-type: text/disconnect-notice
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:76)
+	at org.freeswitch.esl.client.transport.event.EslEvent.<init>(EslEvent.java:61)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.handleEslMessage(AbstractEslClientHandler.java:149)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:107)
+	at org.freeswitch.esl.client.internal.AbstractEslClientHandler.channelRead0(AbstractEslClientHandler.java:1)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)
