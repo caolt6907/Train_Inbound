@@ -270,8 +270,8 @@ public static String replaceTTs(String content,String ttsString){
  
 
 	public static void main(String[] args){
-	String tts="name=鲁旭&money=100&date=2018年12月5日";
-	String content="你好{name}, 你还欠本行{money}元";
+	String tts="姓名=曹连霆";
+	String content="您好{姓名}，我们是一家做电气自动化的工业品网上便利店，叫易买工品。能开16%的增值税发票。请问您公司平常会用到PLC、伺服、触摸屏、变频器或电气辅料吗？";
 	System.out.println(replaceTTs(content,tts));
 	
 	}
