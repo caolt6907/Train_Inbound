@@ -1,9 +1,13 @@
 package com.strategy.call;
 
 
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.util.Map;
 import java.util.Queue;
 import java.util.UUID;
+
 
 
 
@@ -49,10 +53,11 @@ public class CallTableTask_Robot implements Runnable {
 		while(flagMap.get(this.threadName).equals("0")){
 		//	 System.out.println("threadName="+this.threadName); //测试使用
 			while(queue.peek() != null&&flagMap.get(this.threadName).equals("0")){
-				 String callid = UUID.randomUUID().toString();
-				 String[] mobiles = queue.poll().split("&");
+				String queueMobile=queue.poll();
+				if(queueMobile!=null){
+				 String[] mobiles = queueMobile.split("&");
 				 String mobile = mobiles[0];
-				
+				 String callid = UUID.randomUUID().toString();
 				System.out.println(mobile+this.threadName);
 				logger.info(mobile+this.threadName);
 				String info="";
@@ -69,7 +74,7 @@ public class CallTableTask_Robot implements Runnable {
 					Util.SendKafka(callid,this.sProject,mobile,info,1,"","", producer,"");//向kafka发送拨通状态
 					System.out.println("ProjectNumber="+this.ProjectNumber);
 			
-					
+				}	
 				
 				
 				Thread.sleep(1000);
@@ -82,7 +87,12 @@ public class CallTableTask_Robot implements Runnable {
 		 
 		flagMap.remove(this.threadName);
 	}catch(Exception e){
-		e.printStackTrace();
+		flagMap.remove(this.threadName);
+		Writer w = new StringWriter();
+      	 e.printStackTrace(new PrintWriter(w));
+      	  String s=w.toString();
+		System.out.println(s+":"+this.threadName);	
+		logger.warn(s+":"+this.threadName);
 	}
 	}
 

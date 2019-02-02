@@ -95,7 +95,7 @@ public static boolean compare_date(String stDATE, String endDATE) {
 public static String  InsertMobiles (String mobiles,Queue queue){
 	int i;
 	mobiles=mobiles.replace("\"", "");
-	if(queue.size()>=10) return mobiles;
+	if(queue.size()>=50) return mobiles;
 	if (!mobiles.equals("")){
 		
 		String[] mobile = mobiles.split(",");
@@ -104,7 +104,7 @@ public static String  InsertMobiles (String mobiles,Queue queue){
 		queue.offer(str);
 		}	
 		*/
-		for(i=0;i<mobile.length&&queue.size()<10;i++){
+		for(i=0;i<mobile.length&&queue.size()<100;i++){
 			queue.offer(mobile[i]);
 		}
 		if(i>=mobile.length){
@@ -270,9 +270,15 @@ public static String replaceTTs(String content,String ttsString){
  
 
 	public static void main(String[] args){
-	String tts="姓名=曹连霆";
+	/*String tts="姓名=曹连霆";
 	String content="您好{姓名}，我们是一家做电气自动化的工业品网上便利店，叫易买工品。能开16%的增值税发票。请问您公司平常会用到PLC、伺服、触摸屏、变频器或电气辅料吗？";
 	System.out.println(replaceTTs(content,tts));
+	*/
+		 Matcher m = Pattern.compile("声音大点听不见|^什么$|不知道这是干啥|喂喂|刚说什么|听不清|什么东西|再说一遍|什么意思|说什么|没听明白|听不懂|^喂$|^啊$|你说啥|怎么啦|听不到|你说的啥|^怎么了$|听不见|什么没听明白|什么东西啊|声音小|这是干啥|啥呀|重说一下|听不清楚|没听清|啥意思|怎么说法")
+				 .matcher("你再说一遍");
+		 if(m.find()){
+			System.out.println( m.group());
+		 }
 	
 	}
 }
