@@ -2,10 +2,19 @@ package com.strategy.tools;
 
 
 
+
+
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -23,7 +32,7 @@ import java.util.regex.Pattern;
 
 import javax.net.ssl.HttpsURLConnection;
 
-import com.strategy.vo.SubjectBack;
+import com.strategy.vo.Ai;
 
 
 
@@ -40,9 +49,44 @@ import com.strategy.vo.SubjectBack;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import com.strategy.vo.PostStart;
+
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.log4j.Logger;
@@ -155,15 +199,15 @@ public static boolean Regular(String txt,String Speech){
 	return flag;
 }
 
-public static String CallReturnModelJson(CallResultModel callResultModel){
+public static String CallReturnModelJson(Object vo){
 	List list = new ArrayList();
-	list.add(callResultModel);
+	list.add(vo);
 	String str=JsonUtils.listToJson(list);
 	
 	return str;
 }
 
-public static void SendKafka(String CallId,String ProjectId,String Phone,String Content,int Type,String UserSpeackText,String PalyRecordinCode,Producer<String, String> producer,String Intention){
+public static void SendKafka(String CallId,String ProjectId,String Phone,String Content,int Type,String UserSpeackText,String PalyRecordinCode,Producer<String, String> producer,String Deduc,String Amount,String aiid,String Evaluation){
 	 CallResultModel callResultModel= new CallResultModel();
 	   callResultModel.setCallId(CallId);
 	//   callResultModel.setUuid(Uuid);
@@ -173,64 +217,17 @@ public static void SendKafka(String CallId,String ProjectId,String Phone,String 
 	   callResultModel.setType(Type);
 	   callResultModel.setUserSpeackText(UserSpeackText);
 	   callResultModel.setPalyRecordinCode(PalyRecordinCode);
-	   callResultModel.setIntention(Intention);
+	   callResultModel.setDeduc(Deduc);
+	   callResultModel.setAmount(Amount);
 	   callResultModel.setTime(getNowTime());
+	   callResultModel.setAiid(aiid);
+	   callResultModel.setEvaluation(Evaluation);
 	  String str=Util.CallReturnModelJson(callResultModel);
-	producer.send(new ProducerRecord<String, String>("test", str));
+	producer.send(new ProducerRecord<String, String>("train", str));
 	logger.info(str);
 }
-public static String getAuth(String ak,String sk){
-	String authHost="https://aip.baidubce.com/oauth/2.0/token?";
-	String getAccessToKenUrl=authHost
-			// 1. grant_type为固定参数
-            + "grant_type=client_credentials"
-            // 2. 官网获取的 API Key
-            + "&client_id=" + ak
-            // 3. 官网获取的 Secret Key
-            + "&client_secret=" + sk;
-	try{
-		URL realUrl=new URL(getAccessToKenUrl);
-		HttpURLConnection connection = (HttpURLConnection) realUrl.openConnection(); 
-		connection.setRequestMethod("GET");
-		connection.connect();
-		 // 获取所有响应头字段
-		Map<String, List<String>> map = connection.getHeaderFields();
-		 // 遍历所有的响应头字段
-		for(String key : map.keySet()){
-			System.err.println(key + "--->" + map.get(key));
-		}
-		// 定义 BufferedReader输入流来读取URL的响应
-		BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-		String result="";
-		String line="";
-		while ((line=in.readLine())!=null){
-			result += line;
-		}
-		   /**
-         * 返回结果示例
-         */
-        System.err.println("result:" + result);
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("access_token", result);
-        String access_token = jsonObject.getString("access_token");
-        return access_token;
-	
-	}catch(Exception e){
-		System.out.println("获取token失败！");
-		logger.error("获取token失败！",e);
-	}
-	
-	
-	return null;
-	
-}
-public static String getAuth(){
-	String clientId="fb9c83e710db4e6293895005f18cf48f";	
-	String clientSecret="e3482fb6afae49e39546d15b86c35dfe";
-	
-	
-	return getAuth(clientId, clientSecret);
-}
+
+
 
 public static String escapeExprSpecialWord(String keyword) {
     if (StringUtils.isNotBlank(keyword)) {
@@ -244,16 +241,7 @@ public static String escapeExprSpecialWord(String keyword) {
     return keyword;
 }
 
-public static Map sortSubjectBack(List<SubjectBack> list){
-	Map map = new HashMap();
-    Collections.sort(list);  
-    for (SubjectBack subjectBack : list) {  
-    	map.put("ResultWay", subjectBack.getResultWay());
-    	map.put("Intention", subjectBack.getIntention());
-       break;
-    }  
-    return map;
-}  
+
 
 public static String replaceTTs(String content,String ttsString){
 	String tts[] = ttsString.split("&");
@@ -266,19 +254,111 @@ public static String replaceTTs(String content,String ttsString){
 	return content;
 }
 
+public static boolean compareCurrentAIId(String map ,String aid){
+	if(map==null) return false;
+	if(map.equals(""))return false;
+	if(aid==null) return false;
+	if(aid.equals("")) return false;
+	String[] currentAIIDs = map.split("\\|");
+	for(int i=0;i<currentAIIDs.length;i++){
+		if(currentAIIDs[i].equals(aid)) return true;
+	}
+	return false;
+}
 
+
+public static  String post(String url, String reportData) {
+	
+	HttpClient client = HttpClientBuilder.create().build();
+    HttpPost post = new HttpPost(url);
+  //  JSONObject response = null;
+    String result="";
+    try {
+	
+    	post.addHeader("Content-type","application/json; charset=utf-8");
+    	post.setHeader("Accept", "application/json");
+    	post.setEntity(new StringEntity(reportData, Charset.forName("UTF-8")));
+    	
+
+        HttpResponse res = client.execute(post);
+        System.out.println(res.getStatusLine().getStatusCode());
+        if (res.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+            HttpEntity entity = res.getEntity();
+             result = EntityUtils.toString(entity);
+        //    response = JSONObject.parseObject(result);
+        }
+    } catch (Exception e) {
+        throw new RuntimeException(e);
+    }
+    return result;
+
+}
  
 
-	public static void main(String[] args){
-	/*String tts="姓名=曹连霆";
-	String content="您好{姓名}，我们是一家做电气自动化的工业品网上便利店，叫易买工品。能开16%的增值税发票。请问您公司平常会用到PLC、伺服、触摸屏、变频器或电气辅料吗？";
-	System.out.println(replaceTTs(content,tts));
+	public static void main(String[] args) throws UnsupportedEncodingException{
+		
+			JSONObject body = new JSONObject();
+		body.put("type", "text");
+		body.put("speech",null);
+		
+		Map map1=	JsonUtils.parseJSON2Map(body.toString());
+		System.out.println("speech="+(map1.get("speech")+"").length());
+	//	String speech="";
+		String speech = (map1.get("speech")+"").equals("")|| (map1.get("speech")+"").equals("null") ? "abcdefg":map1.get("speech")+"";
+		System.out.println(speech);
+	/*	if((map1.get("speech")+"").equals("")){
+			 speech="abcdefg";
+		}else{
+			 speech=map1.get("speech")+"";
+		}
+	//	String speech = (map1.get("speech")+"")==""|| (map1.get("speech")+"")==null ? "abcdefg":map1.get("speech")+"";
+		System.out.println(speech);
 	*/
-		 Matcher m = Pattern.compile("声音大点听不见|^什么$|不知道这是干啥|喂喂|刚说什么|听不清|什么东西|再说一遍|什么意思|说什么|没听明白|听不懂|^喂$|^啊$|你说啥|怎么啦|听不到|你说的啥|^怎么了$|听不见|什么没听明白|什么东西啊|声音小|这是干啥|啥呀|重说一下|听不清楚|没听清|啥意思|怎么说法")
-				 .matcher("你再说一遍");
-		 if(m.find()){
-			System.out.println( m.group());
-		 }
+		String bostname="trainingcustomer";
+		String callid="1c6c6719-3e30-44b1-bc70-d3b10bc4d71b";
+		String url="http://112.64.145.218:3086/api/v1/bots/bostname/converse/callid";
+		String temp=url.replace("bostname",bostname);
+		url=temp.replace("callid",callid);
 	
-	}
+		JSONObject body1 = new JSONObject();
+		body1.put("type", "text");
+		body1.put("text",speech);
+	
+		String  result=post(url,body1.toString());
+		System.out.println(result);
+		
+	/*	String temp1=url.replace("bostname",bostname);
+		url=temp1.replace("callid",callid);
+	
+		JSONObject body1 = new JSONObject();
+		body1.put("type", "start");
+		body1.put("text","收到");
+		String  result1=post(url,body1.toString());
+		System.out.println(result1);
+	//	PostStart postStart= new PostStart();
+	/*	postStart.setType("start");
+		postStart.setTxt("开始");
+		String str=Util.CallReturnModelJson(postStart);
+		System.out.println(post(url,str));*/
+	/*	JSONObject body = new JSONObject();
+		body.put("type", "start");
+		body.put("text","开始");
+		String  result=post(url,body.toString());
+		
+		System.out.println(result);
+		 JSONObject jsonObject = JSONObject.fromObject(result);
+		 JSONArray responses = jsonObject.getJSONArray("responses");
+	
+		List<Map<String, Object>> list= JsonUtils.parseJSON2List(responses.toString());
+				for(Map<String, Object> map:list){
+					System.out.println(map.get("type"));
+					System.out.println(map.get("text"));
+				}
+		
+	*/
+		
+		
+	
+	}	
+	
 }

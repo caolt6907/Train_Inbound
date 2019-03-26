@@ -23,7 +23,7 @@ public class RedisUtils {
 	}
 	*/
 	private static String  passWord="6EhSiGpsmSMRyZieglUImkTr-eoNRNBgRk397mVyu66MHYuZDsepCeZ8A-MHdLBQwQQVQiHBufZbPb";
-	private static int dataBase=8;//6
+	private static int dataBase=6;//8
 	private RedisUtils(){		    
 	    }
 	 private static  JedisPool jedisPool = null;

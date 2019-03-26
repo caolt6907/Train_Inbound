@@ -16,6 +16,9 @@ import java.util.UUID;
 
 
 
+
+
+
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.log4j.Logger;
@@ -35,7 +38,11 @@ public class CallTableTask_Robot implements Runnable {
 	private String ProjectNumber;
 	private String AsrName;
 	Producer<String, String> producer;
-	public CallTableTask_Robot( Queue<String> queue,String ProjectNumber,Map flagMap,String threadName,String StrategyId,String AsrName,Producer<String, String> producer){
+	private static long st=System.currentTimeMillis();
+	private static long et=System.currentTimeMillis();
+	private Map periodMap;
+	private String BotName;
+	public CallTableTask_Robot( Queue<String> queue,String ProjectNumber,Map flagMap,String threadName,String StrategyId,String AsrName,String BotName,Producer<String, String> producer){
 		this.queue=queue;
 		this.flagMap=flagMap;
 		this.threadName=threadName;
@@ -43,7 +50,8 @@ public class CallTableTask_Robot implements Runnable {
 		this.StrategyId=StrategyId;
 		this.producer=producer;
 		this.ProjectNumber = ProjectNumber;
-		this.AsrName=AsrName;
+		this.AsrName=AsrName;		
+		this.BotName=BotName;
 	}
 
 	@Override
@@ -51,8 +59,17 @@ public class CallTableTask_Robot implements Runnable {
 		try{
 				
 		while(flagMap.get(this.threadName).equals("0")){
-		//	 System.out.println("threadName="+this.threadName); //测试使用
+		
 			while(queue.peek() != null&&flagMap.get(this.threadName).equals("0")){
+	/*		synchronized(this) {
+			 et=System.currentTimeMillis();
+			if(queue.peek() != null&&flagMap.get(this.threadName).equals("0")&&et-st>Integer.valueOf(periodMap.get(this.sProject+"_period")+"")){
+				st=et;
+			}else{
+				continue;
+			}
+		}
+	*/
 				String queueMobile=queue.poll();
 				if(queueMobile!=null){
 				 String[] mobiles = queueMobile.split("&");
@@ -62,24 +79,24 @@ public class CallTableTask_Robot implements Runnable {
 				logger.info(mobile+this.threadName);
 				String info="";
 				if(mobiles.length>1){
-					 info = dialer.originate(this.ProjectNumber, mobile, "",this.sProject+"|"+this.StrategyId+"|"+callid+"|"+mobile+"|"+this.AsrName+"|"+mobiles[1]+"|"+this.threadName);
+					 info = dialer.originate(this.ProjectNumber, mobile, "",this.sProject+"|"+this.StrategyId+"|"+callid+"|"+mobile+"|"+this.AsrName+"|"+this.BotName+"|"+mobiles[1]+"|"+this.threadName);
 					 System.out.println("###########"+mobiles[1]+"**********");	
 				}else{
-					 info = dialer.originate(this.ProjectNumber, mobile, "",this.sProject+"|"+this.StrategyId+"|"+callid+"|"+mobile+"|"+this.AsrName);
+					 info = dialer.originate(this.ProjectNumber, mobile, "",this.sProject+"|"+this.StrategyId+"|"+callid+"|"+mobile+"|"+this.AsrName+"|"+this.BotName);
 				}
 				
 					
 					System.out.println("###########"+info+"**********");//USER_BUSY,TIMEOUT					
 					logger.info("###########"+info+"**********");
-					Util.SendKafka(callid,this.sProject,mobile,info,1,"","", producer,"");//向kafka发送拨通状态
+					Util.SendKafka(callid,this.sProject,mobile,info,1,"","", producer,"0","0","0","");//向kafka发送拨通状态
 					System.out.println("ProjectNumber="+this.ProjectNumber);
 			
 				}	
 				
 				
 				Thread.sleep(1000);
-			}
 			
+		 }
 			Thread.sleep(1000);
 			
 		}
@@ -92,7 +109,7 @@ public class CallTableTask_Robot implements Runnable {
       	 e.printStackTrace(new PrintWriter(w));
       	  String s=w.toString();
 		System.out.println(s+":"+this.threadName);	
-		logger.warn(s+":"+this.threadName);
+		logger.warn(s+"::"+this.threadName);
 	}
 	}
 

@@ -11,6 +11,10 @@ public class CallResultModel {
 	private String Intention;
 	private String uuid;
 	private String time;
+	private String deduc;
+	private String amount;
+	private String aiid;
+	private String evaluation;
 	public String getCallId() {
 		return callId;
 	}
@@ -73,5 +77,31 @@ public class CallResultModel {
 	public void setTime(String time) {
 		this.time = time;
 	}
+	
+	public String getAmount() {
+		return amount;
+	}
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
+	public String getAiid() {
+		return aiid;
+	}
+	public void setAiid(String aiid) {
+		this.aiid = aiid;
+	}
+	public String getDeduc() {
+		return deduc;
+	}
+	public void setDeduc(String deduc) {
+		this.deduc = deduc;
+	}
+	public String getEvaluation() {
+		return evaluation;
+	}
+	public void setEvaluation(String evaluation) {
+		this.evaluation = evaluation;
+	}
+	
 
 }

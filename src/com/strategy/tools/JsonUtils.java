@@ -7,7 +7,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.lang.reflect.Type;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -44,6 +46,8 @@ import net.sf.json.JSONObject;
 
 
 
+
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.strategy.vo.CallResultModel;
@@ -55,6 +59,21 @@ import com.strategy.vo.CallResultModel;
  * 
  */
 public class JsonUtils {
+	public static SimpleDateFormat sdf1 = new SimpleDateFormat(
+			"yyyy-MM-dd HH:mm:ss");
+	
+	/**
+	 * 获取系统时间(年月日时分秒)
+	 * 
+	 * @return
+	 */
+	public static String getNowTime() {
+		String time = sdf1.format(new Date());
+		return time;
+	}
+	
+	
+	
 	/**
 	 * 
 	 * @param object
