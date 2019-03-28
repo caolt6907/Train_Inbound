@@ -330,8 +330,8 @@ public class TaskTzManager  {
 		 
 		Jedis rs=RedisUtils.getJedis();//获取redis连接池里的连接对象
 		
-		final ScheduledExecutorService service = Executors.newScheduledThreadPool(10);
-		service.scheduleWithFixedDelay(new TtsConvert(jTTS),0,1000*60,TimeUnit.MILLISECONDS);//启动tts转换线程
+	//	final ScheduledExecutorService service = Executors.newScheduledThreadPool(10);
+	//	service.scheduleWithFixedDelay(new TtsConvert(jTTS),0,1000*60,TimeUnit.MILLISECONDS);//启动tts转换线程
       
 		final SocketClient outboundServer = new SocketClient(
                 new InetSocketAddress("127.0.0.1", 8025),dialer.createClient(new clientMessage())); //8025 8022
